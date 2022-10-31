@@ -1,0 +1,94 @@
+body{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+}
+
+#root{
+  width: 100%;
+}
+
+.App{
+  width: 600px;
+  height: fit-content;
+  padding: 25px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-between;
+  border: 1px solid rgb(0, 100, 167);
+  border-radius: 15px;
+  margin: auto;
+  font-weight: 900;
+  position: relative;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: 0 0 25px black;
+}
+
+@media (max-width: 610px){
+  .App{
+    width: 75%;
+  }
+}
+
+@media (max-width: 450px){
+  .App{
+    width: 95%;
+  }
+}
+
+.App .temperature{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App .temperature .temp{
+  border: 2px solid saddlebrown;
+  padding: 2px;
+}
+
+.App .iconSeparate{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  width: fit-content;
+  border: 1px solid saddlebrown;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+img{
+  width: 150px;
+}
+
+video{
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  left: 0;
+}
+
+@media(max-width: 795px){
+  video{
+    display: none;
+  }
+}
