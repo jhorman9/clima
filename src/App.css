@@ -5,6 +5,7 @@ body{
   display: flex;
   align-items: center;
   background-size: cover;
+  background-position: top;
 }
 
 #root{
@@ -76,6 +77,12 @@ button{
 
 img{
   width: 150px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
 video{

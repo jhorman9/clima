@@ -33,7 +33,7 @@ function App() {
     document.body.style ="background-image('https://4.bp.blogspot.com/-hBJkeg5al8M/WCjpiOmbShI/AAAAAAAABdQ/gZ_b2Lyc_X8cMKf70upx_xXaPq7CF_i_ACLcB/s1600/6262013414_05dd3de8ce_b.jpg'); color:white";
   }
 
-  document.body.style ="background-image:url('https://www.madeiraislandnews.com/wp-content/uploads/2020/02/image_content_2787091_20200222115545.jpg'); color:black";
+  document.body.style ="background-image:url('https://p0.piqsels.com/preview/502/763/582/sky-clouds-sun-weather.jpg'); color:black";
 
   return (
     <>
