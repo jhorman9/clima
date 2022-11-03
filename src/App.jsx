@@ -24,16 +24,27 @@ function App() {
 
   console.log(weather);
   
-  let videoToBg = "./src/assets/video/Dia.mp4";
   if(weather.weather?.[0].icon == "09d" || weather.weather?.[0].icon == "10d"){
-    videoToBg = "./src/assets/video/LluviaDia.mp4";
     document.body.style ="background-image('https://i.vimeocdn.com/video/754305287-aa942b9f53c566365a144ca3ac9762b9076cc4e965d1fbf103813dcb38200d57-d_640x360.jpg'); color:black";
-  }else if(weather.weather?.[0].icon == "09dn" || weather.weather?.[0].icon == "10dn"){
-    videoToBg = "./src/assets/video/LluviaNoche.mp4";
+  }else if(weather.weather?.[0].icon == "09n" || weather.weather?.[0].icon == "10n"){
     document.body.style ="background-image('https://4.bp.blogspot.com/-hBJkeg5al8M/WCjpiOmbShI/AAAAAAAABdQ/gZ_b2Lyc_X8cMKf70upx_xXaPq7CF_i_ACLcB/s1600/6262013414_05dd3de8ce_b.jpg'); color:white";
+  }else if(weather.weather?.[0].icon === "01d"){
+    document.body.style ="background-image:url('https://p0.piqsels.com/preview/502/763/582/sky-clouds-sun-weather.jpg'); color:black";
+  }else if(weather.weather?.[0].icon === "02d"){
+    document.body.style = "background-image: url('https://media.istockphoto.com/photos/deep-blue-sky-with-few-clouds-picture-id1310822348?k=20&m=1310822348&s=612x612&w=0&h=LlQm1Cxcw-mNRyMYmUtFNtxrlycyTpeChoJYIsHLDOw='); color:black"
+  }else if(weather.weather?.[0].icon === "03d"){
+    document.body.style = "background-image: url('https://media.istockphoto.com/photos/cirrocumulus-clouds-cloudscape-picture-id645173476?b=1&k=20&m=645173476&s=170667a&w=0&h=0wdytj1LA3mA1Jzp0j6_rgip60BxH9e5BAAE_vFlJQE='); color:black"
+  }else if(weather.weather?.[0].icon === "04d"){
+    document.body.style = "background-image: url('https://www.e-education.psu.edu/meteo101/sites/www.e-education.psu.edu.meteo101/files/images/lesson1/broken_ps0107.jpg'); color:black"
+  }else if(weather.weather?.[0].icon === "01n"){
+    document.body.style = "background-image: url('https://cdn.pixabay.com/photo/2016/11/25/23/15/moon-1859616_960_720.jpg'); color:#bc6c25"
+  }else if(weather.weather?.[0].icon === "02n"){
+    document.body.style = "background-image: url('https://qph.cf2.quoracdn.net/main-qimg-506bee5948e08eb9100f86cd17f6314f.webp'); color:#bc6c25"
+  }else if(weather.weather?.[0].icon === "03n"){
+    document.body.style = "background-image: url('https://live.staticflickr.com/5758/22448249491_e3e9ddcddf_b.jpg'); color:#bc6c25"
+  }else if(weather.weather?.[0].icon === "04n"){
+    document.body.style = "background-image: url('https://i0.wp.com/www.troyjohnstone.com/astrophotography/images/sky_clouds_night_moon_2006_09_09_04.jpg'); color:#bc6c25"
   }
-
-  document.body.style ="background-image:url('https://p0.piqsels.com/preview/502/763/582/sky-clouds-sun-weather.jpg'); color:black";
 
   return (
     <>
@@ -57,7 +68,7 @@ function App() {
           <button onClick={changer}>{changeTemp ? "Change to C°" : "Change to K"}</button>
         </div>
       </div>
-      <video src={videoToBg} autoplay="true" muted="true" loop="true" ></video>
+      {}
     </>
   )
 }
