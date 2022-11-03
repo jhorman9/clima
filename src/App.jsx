@@ -37,13 +37,13 @@ function App() {
   }else if(weather.weather?.[0].icon === "04d"){
     document.body.style = "background-image: url('https://www.e-education.psu.edu/meteo101/sites/www.e-education.psu.edu.meteo101/files/images/lesson1/broken_ps0107.jpg'); color:black"
   }else if(weather.weather?.[0].icon === "01n"){
-    document.body.style = "background-image: url('https://cdn.pixabay.com/photo/2016/11/25/23/15/moon-1859616_960_720.jpg'); color:#bc6c25"
+    document.body.style = "background-image: url('https://cdn.pixabay.com/photo/2016/11/25/23/15/moon-1859616_960_720.jpg'); color:white"
   }else if(weather.weather?.[0].icon === "02n"){
-    document.body.style = "background-image: url('https://qph.cf2.quoracdn.net/main-qimg-506bee5948e08eb9100f86cd17f6314f.webp'); color:#bc6c25"
+    document.body.style = "background-image: url('https://qph.cf2.quoracdn.net/main-qimg-506bee5948e08eb9100f86cd17f6314f.webp'); color:white"
   }else if(weather.weather?.[0].icon === "03n"){
-    document.body.style = "background-image: url('https://live.staticflickr.com/5758/22448249491_e3e9ddcddf_b.jpg'); color:#bc6c25"
+    document.body.style = "background-image: url('https://live.staticflickr.com/5758/22448249491_e3e9ddcddf_b.jpg'); color:white"
   }else if(weather.weather?.[0].icon === "04n"){
-    document.body.style = "background-image: url('https://i0.wp.com/www.troyjohnstone.com/astrophotography/images/sky_clouds_night_moon_2006_09_09_04.jpg'); color:#bc6c25"
+    document.body.style = "background-image: url('https://i0.wp.com/www.troyjohnstone.com/astrophotography/images/sky_clouds_night_moon_2006_09_09_04.jpg'); color:white"
   }
 
   return (
