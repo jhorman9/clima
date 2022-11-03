@@ -41,7 +41,7 @@ function App() {
   }else if(weather.weather?.[0].icon === "02n"){
     document.body.style = "background-image: url('https://qph.cf2.quoracdn.net/main-qimg-506bee5948e08eb9100f86cd17f6314f.webp'); color:white"
   }else if(weather.weather?.[0].icon === "03n"){
-    document.body.style = "background-image: url('https://live.staticflickr.com/5758/22448249491_e3e9ddcddf_b.jpg'); color:white"
+    document.body.style = "background-image: url('https://live.staticflickr.com/89/243533494_363ba3b01e_b.jpg'); color:white"
   }else if(weather.weather?.[0].icon === "04n"){
     document.body.style = "background-image: url('https://i0.wp.com/www.troyjohnstone.com/astrophotography/images/sky_clouds_night_moon_2006_09_09_04.jpg'); color:white"
   }
