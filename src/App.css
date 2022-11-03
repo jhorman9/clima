@@ -31,7 +31,7 @@ body{
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   box-shadow: 0 0 25px black;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(50px);
 }
 
 @media (max-width: 610px){
