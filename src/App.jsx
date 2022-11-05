@@ -70,12 +70,12 @@ function App() {
           </div>
         </div>
         <div className="temperature">
-          <p className='temp'><b>Temp:</b> {changeTemp ? `${weather.main?.temp} K` : `${(weather.main?.temp - 273.15).toFixed(2)} C°`}</p>
-          <p className='temp'><b>Temp MAX:</b> {changeTemp ? `${weather.main?.temp_max} K` : `${(weather.main?.temp_max - 273.15).toFixed(2)} C°`}</p>
-          <p className='temp'><b>Temp MIN:</b> {changeTemp ? `${weather.main?.temp_min} K` : `${(weather.main?.temp_min - 273.15).toFixed(2)} C°`}</p>
+          <p className='temp'><b>Temp:</b> {changeTemp ? `${(weather.main?.temp - 273.15).toFixed(2)} °C` : `${((weather.main?.temp - 273.15) * 9/5 + 32).toFixed(2)} °F`}</p>
+          <p className='temp'><b>Temp MAX:</b> {changeTemp ? `${(weather.main?.temp_max - 273.15).toFixed(2)} °C` : `${((weather.main?.temp_max - 273.15) * 9/5 + 32).toFixed(2)} °F`}</p>
+          <p className='temp'><b>Temp MIN:</b> {changeTemp ? `${(weather.main?.temp_min - 273.15).toFixed(2)} °C` : `${((weather.main?.temp_min - 273.15) * 9/5 + 32).toFixed(2)} °F`}</p>
         </div>
         <div className="btn">
-          <button onClick={changer}>{changeTemp ? "Change to C°" : "Change to K"}</button>
+          <button onClick={changer}>{changeTemp ? "Change to °F" : "Change to °C"}</button>
         </div>
       </div>
           }
